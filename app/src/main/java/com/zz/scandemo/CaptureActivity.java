@@ -88,7 +88,7 @@ public class CaptureActivity extends Activity implements SurfaceHolder.Callback 
         scanLine = (ImageView) findViewById(R.id.capture_scan_line);
         tv = (TextView) findViewById(R.id.tv_cap_tip);
         tv.setVisibility(View.GONE);
-        ((TextView)findViewById(R.id.toolbar_title)).setText("扫描耳标");
+        ((TextView)findViewById(R.id.toolbar_title)).setText("扫描二维码");
         findViewById(R.id.toolbar_back).setOnClickListener(v -> finish());
         isHasSurface = false;
         beepManager = new BeepManager(this);
