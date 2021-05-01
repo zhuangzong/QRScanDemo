@@ -1,0 +1,7 @@
+Executable : F:\sdk\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+G:\QrScanDemo\opencv\.cxx\cmake\debug\armeabi-v7a
+opencv_jni_shared
+jvmArgs : 
+

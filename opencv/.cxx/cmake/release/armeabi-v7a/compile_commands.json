@@ -1,0 +1,7 @@
+[
+{
+  "directory": "G:/QrScanDemo/opencv/.cxx/cmake/release/armeabi-v7a",
+  "command": "F:\\sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=armv7-none-linux-androideabi21 --gcc-toolchain=F:/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot    -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC   -o CMakeFiles\\opencv_jni_shared.dir\\dummy.cpp.o -c G:\\QrScanDemo\\opencv\\dummy.cpp",
+  "file": "G:/QrScanDemo/opencv/dummy.cpp"
+}
+]
