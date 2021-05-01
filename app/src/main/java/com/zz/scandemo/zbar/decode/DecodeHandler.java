@@ -17,13 +17,7 @@
 package com.zz.scandemo.zbar.decode;
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.ImageFormat;
-import android.graphics.Matrix;
-import android.graphics.Rect;
 import android.graphics.RectF;
-import android.graphics.YuvImage;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -32,14 +26,13 @@ import android.util.Log;
 
 
 import com.zz.scandemo.R;
-import com.zz.scandemo.zbar.CaptureActivity;
+import com.zz.scandemo.CaptureActivity;
 import com.zz.scandemo.zbar.utils.PlanarYUVLuminanceSource;
 
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 import org.opencv.wechat_qrcode.WeChatQRCode;
 
-import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;

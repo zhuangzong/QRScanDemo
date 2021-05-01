@@ -1,4 +1,4 @@
-package com.zz.scandemo.zbar;
+package com.zz.scandemo;
 
 import android.Manifest;
 import android.app.Activity;
@@ -29,8 +29,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 
-
-import com.zz.scandemo.R;
 import com.zz.scandemo.zbar.camera.CameraManager;
 import com.zz.scandemo.zbar.decode.MainHandler;
 import com.zz.scandemo.zbar.utils.BeepManager;
@@ -281,7 +279,7 @@ public class CaptureActivity extends Activity implements SurfaceHolder.Callback 
             @Override
             public void run() {
                 String sdpath = Environment.getExternalStorageDirectory().getAbsolutePath();// 获取sdcard的根路径
-                String filePath = sdpath + File.separator + "yz365" + File.separator;
+                String filePath = sdpath + File.separator + "zz" + File.separator;
                 File localFile = new File(filePath);
                 if (!localFile.exists()) {
                     localFile.mkdir();
@@ -302,34 +300,6 @@ public class CaptureActivity extends Activity implements SurfaceHolder.Callback 
 
             }
         }, beepManager.getTimeDuration());
-    }
-    public void saveBitmapFile(Bitmap bitmap) {
-        String sdpath = Environment.getExternalStorageDirectory().getAbsolutePath();// 获取sdcard的根路径
-        String filePath = sdpath + File.separator + "yz365" + File.separator;
-        File localFile = new File(filePath);
-        if (!localFile.exists()) {
-            localFile.mkdir();
-        }
-        File file = new File(localFile, System.currentTimeMillis() + ".jpg");
-        try {
-            BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(file));
-            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, bos);
-            bos.flush();
-            bos.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-    }
-    private void activityResult(String result) {
-        if (!isFinishing()) {
-            Intent intent =new Intent();
-            Bundle bundle = new Bundle();
-            bundle.putString("code", result);
-            intent.putExtras(bundle);
-            setResult(RESULT_OK,intent);
-            CaptureActivity.this.finish();
-        }
     }
 
     //endregion

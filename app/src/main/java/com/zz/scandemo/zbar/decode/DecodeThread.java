@@ -20,7 +20,7 @@ import android.os.Handler;
 import android.os.Looper;
 
 
-import com.zz.scandemo.zbar.CaptureActivity;
+import com.zz.scandemo.CaptureActivity;
 
 import java.util.concurrent.CountDownLatch;
 

@@ -7,7 +7,7 @@ import android.os.Message;
 import android.text.TextUtils;
 
 import com.zz.scandemo.R;
-import com.zz.scandemo.zbar.CaptureActivity;
+import com.zz.scandemo.CaptureActivity;
 import com.zz.scandemo.zbar.camera.CameraManager;
 
 
