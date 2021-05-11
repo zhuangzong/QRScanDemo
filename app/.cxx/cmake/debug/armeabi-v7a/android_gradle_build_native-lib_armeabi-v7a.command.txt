@@ -1,7 +1,0 @@
-Executable : F:\sdk\cmake\3.10.2.4988404\bin\ninja.exe
-arguments : 
--C
-G:\QrScanDemo\app\.cxx\cmake\debug\armeabi-v7a
-native-lib
-jvmArgs : 
-
